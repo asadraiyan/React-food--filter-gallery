@@ -1,38 +1,62 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.heading{
   text-align: center;
+  margin-top: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menutab{
+  /* border: 2px solid red; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 170px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
+  
+}
+.btn{
+  font-size: 15px;
+  padding: 2px 5px 2px 5px;
+  background-color: orange;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #f3f3f3;
+  font-weight: 500;
+}
+.menu-container{
+  display: flex;
+  border: 2px solid red;
+  width: 450px;
+  margin-top: 50px;
+  gap: 1rem;
+}
+.img{
+  /* border: 2px solid yellow; */
+  width: 150px;
+  height: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.foodImage {
+  height: 150px;
+  width: 150px;
+}
+.menu-item{
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+ 
+  
+  
+}
+.menu-price {
+  display: flex;
+  justify-content: space-between;
+}
+.order{
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
