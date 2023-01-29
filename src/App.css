@@ -1,62 +1,285 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.heading{
+
+.heading {
   text-align: center;
   margin-top: 10px;
 }
-.menutab{
+
+.menutab {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
-  gap: 170px;
+  gap: 12%;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  
+  height: 100px;
 }
-.btn{
+
+.btn {
   font-size: 15px;
   padding: 2px 5px 2px 5px;
   background-color: orange;
   border: none;
-  box-shadow: 1px 1px 1px 1px #f3f3f3;
+  box-shadow: 1px 1px 2px 2px #d4d1d1;
   font-weight: 500;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
 }
-.menu-container{
+
+.name {
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #FFDE33;
+}
+
+.main-container {
   display: flex;
-  border: 2px solid red;
-  width: 450px;
-  margin-top: 50px;
-  gap: 1rem;
+  /* border: 2px solid blue; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 20px;
 }
-.img{
+
+.menu-container {
+  display: flex;
+  border: 1px solid rgb(216, 209, 209);
+  width: 420px;
+  gap: 0.5rem;
+  border-radius: 7px;
+  /* box-shadow: 1px 1px 3px 3px #dbe9f3; */
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.img {
   /* border: 2px solid yellow; */
+  height: 182px;
   width: 150px;
-  height: 150px;
 }
 
 .foodImage {
-  height: 150px;
+  height: 182px;
   width: 150px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
-.menu-item{
+
+.menu-item {
   /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
- 
-  
-  
 }
+
 .menu-price {
   display: flex;
   justify-content: space-between;
-}
-.order{
-  margin-right: 10px;
+  margin-top: 20px;
 }
 
+.order {
+  margin-right: 10px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 2px 7px 2px 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.order:hover {
+  background-color: #3356FF;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.rate {
+  color: #3498db;
+}
+
+@media only screen and (max-width: 900px) {
+  .foodImage {
+    height: 150px;
+    width: 130px;
+  }
+
+  .img {
+    height: 150px;
+    width: 130px;
+  }
+
+  .menu-container {
+    width: 380px;
+  }
+
+  .price {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .rate {
+    font-size: 15px;
+  }
+
+  .order {
+    font-size: 12px;
+  }
+
+  .menu-price {
+    margin-top: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .menutab {
+    gap: 10%;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .menutab {
+    gap: 7%;
+  }
+
+  .btn {
+    font-size: 11px;
+  }
+
+  .foodImage {
+    height: 140px;
+    width: 120px;
+  }
+
+  .img {
+    height: 140px;
+    width: 120px;
+  }
+
+  .menu-container {
+    width: 370px;
+  }
+
+  .price {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .content {
+    font-size: 13px;
+  }
+
+  .rate {
+    font-size: 13px;
+  }
+
+  .order {
+    font-size: 10px;
+  }
+
+  .menu-price {
+    margin-top: 8px;
+  }
+
+  .heading {
+    font-size: 23px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+  .menutab {
+    gap: 7%;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .foodImage {
+    height: 120px;
+    width: 100px;
+  }
+
+  .img {
+    height: 120px;
+    width: 100px;
+  }
+
+  .menu-container {
+    width: 325px;
+  }
+
+  .price {
+    font-size: 9px;
+    margin-top: 5px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .rate {
+    font-size: 12px;
+  }
+
+  .order {
+    font-size: 9px;
+  }
+
+  .menu-price {
+    margin-top: 6px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+}
