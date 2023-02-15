@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import aloImage from "../assets/aaloo_pakode.jpg"
 import Menu from '../Menu'
 
 const Gallery = () => {
